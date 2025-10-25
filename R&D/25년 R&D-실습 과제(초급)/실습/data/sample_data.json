@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "홍길동",
+      "email": "hong@example.com",
+      "age": 30,
+      "active": true,
+      "roles": ["admin", "user"],
+      "created_at": "2025-01-15T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "김철수",
+      "email": "kim@example.com",
+      "age": 25,
+      "active": true,
+      "roles": ["user"],
+      "created_at": "2025-02-20T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "name": "이영희",
+      "email": "lee@example.com",
+      "age": 28,
+      "active": false,
+      "roles": ["user", "moderator"],
+      "created_at": "2025-03-10T11:20:00Z"
+    },
+    {
+      "id": 4,
+      "name": "박민수",
+      "email": "park@example.com",
+      "age": 35,
+      "active": true,
+      "roles": ["admin"],
+      "created_at": "2025-04-05T16:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "정수진",
+      "email": "jung@example.com",
+      "age": 27,
+      "active": true,
+      "roles": ["user"],
+      "created_at": "2025-05-12T10:15:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "노트북",
+      "category": "전자제품",
+      "price": 1500000,
+      "stock": 45,
+      "manufacturer": "TechCorp",
+      "specifications": {
+        "cpu": "Intel i7",
+        "ram": "16GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": 102,
+      "name": "무선 마우스",
+      "category": "주변기기",
+      "price": 35000,
+      "stock": 120,
+      "manufacturer": "AccessoryPlus",
+      "specifications": {
+        "type": "wireless",
+        "dpi": 1600,
+        "battery": "AA x 2"
+      }
+    },
+    {
+      "id": 103,
+      "name": "기계식 키보드",
+      "category": "주변기기",
+      "price": 180000,
+      "stock": 67,
+      "manufacturer": "KeyMaster",
+      "specifications": {
+        "switch": "Cherry MX Blue",
+        "backlight": "RGB",
+        "layout": "Full Size"
+      }
+    },
+    {
+      "id": 104,
+      "name": "27인치 모니터",
+      "category": "전자제품",
+      "price": 450000,
+      "stock": 28,
+      "manufacturer": "DisplayTech",
+      "specifications": {
+        "resolution": "2560x1440",
+        "refresh_rate": "144Hz",
+        "panel": "IPS"
+      }
+    },
+    {
+      "id": 105,
+      "name": "외장 SSD",
+      "category": "저장장치",
+      "price": 120000,
+      "stock": 85,
+      "manufacturer": "StoragePro",
+      "specifications": {
+        "capacity": "1TB",
+        "interface": "USB 3.2 Gen 2",
+        "speed": "1000MB/s"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "ORD-2025-001",
+      "user_id": 1,
+      "order_date": "2025-10-15T14:30:00Z",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 1,
+          "unit_price": 1500000
+        },
+        {
+          "product_id": 102,
+          "quantity": 2,
+          "unit_price": 35000
+        }
+      ],
+      "total_amount": 1570000,
+      "shipping_address": {
+        "street": "서울시 강남구 테헤란로 123",
+        "city": "서울",
+        "postal_code": "06234",
+        "country": "대한민국"
+      }
+    },
+    {
+      "order_id": "ORD-2025-002",
+      "user_id": 2,
+      "order_date": "2025-10-16T09:15:00Z",
+      "status": "pending",
+      "items": [
+        {
+          "product_id": 103,
+          "quantity": 1,
+          "unit_price": 180000
+        }
+      ],
+      "total_amount": 180000,
+      "shipping_address": {
+        "street": "부산시 해운대구 센텀로 456",
+        "city": "부산",
+        "postal_code": "48058",
+        "country": "대한민국"
+      }
+    },
+    {
+      "order_id": "ORD-2025-003",
+      "user_id": 3,
+      "order_date": "2025-10-17T16:45:00Z",
+      "status": "shipped",
+      "items": [
+        {
+          "product_id": 104,
+          "quantity": 1,
+          "unit_price": 450000
+        },
+        {
+          "product_id": 105,
+          "quantity": 1,
+          "unit_price": 120000
+        }
+      ],
+      "total_amount": 570000,
+      "shipping_address": {
+        "street": "대전시 유성구 대학로 789",
+        "city": "대전",
+        "postal_code": "34134",
+        "country": "대한민국"
+      }
+    }
+  ],
+  "statistics": {
+    "total_users": 5,
+    "active_users": 4,
+    "total_products": 5,
+    "total_orders": 3,
+    "total_revenue": 2320000,
+    "average_order_value": 773333,
+    "last_updated": "2025-10-19T12:00:00Z"
+  }
+}

@@ -1,0 +1,44 @@
+주제
+Window 환경에서 Docker 설치 및 기본 설정 가이드
+
+개요
+Docker는 컨테이너 기반의 가상화 플랫폼으로, 개발 환경 구축 및 배포 자동화에 매우 유용합니다
+본 문서에서는 Windows 10/11에서 Docker Desktop 설치부터 실행까지의 기본 절차를 안내합니다.
+특히 WSL2 기반 설치에 초점을 맞추며, 설치 중 자주 발생하는 오류에 대한 해결방법도 함께 포함합니다.
+
+환경
+운영체제 : Windows 10(버전 2004 이상) 또는 Windows 11
+BIOS에서 가상화(Virtualization) 기능 활성화
+Windows 기능 :
+ WSL(Windows Subsystem for Linux)
+ Virtual Machine Platform
+관리자 권한 PowerShell 또는 CMD 실행
+
+
+내용
+2.1 WSL2 설치 절차 (Windows 10 기준)
+Docker는 리눅스를 기반으로 동작하는 기술이기 때문에, Widnows 환경에서 사용하려면 WSL 2를 먼저 활성화해야합니다.
+WSL은 별도의 가상머신(VM) 없이도 윈도우 환경 내에서 리눅스를 실행할 수 있도록 해주는 기능입니다.
+Powershell을 Bash처럼 사용하고, sed, awk, vim, apt 같은 Linux 명령어는 물론, 리눅스 커널까지 함께 실행되므로 Docker와의 연동이 매우 원활합니다.
+
+# WSL를 활성화 시키는 명령어
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+# VirtualMachinePlatform 기능을 활성화 시키는 명령어 : WSL2 버전에 필요한 명령어
+dism.exe /online /enable-feature /featurename:VIrturalMachinePlatform /all /norestart
+
+2.2 Microsoft Store에서 Ubuntu 설치하기
+-윈도우검색>Microsoft Store > Ubuntu 검색 다운로드 설치
+
+2.3 재부팅 후 WSL2 커널 설치
+
+2.4 Docker  CLI 설치
+ -기존 패키지 업데이트
+ - 필수 패키지 설치
+ - Docker 공식 GPG 키 등록
+ - Docker 저장소 등록
+ - Docker 패키지 설치
+ - Docker 데몬 실행 권한 부여 (WSL용 workaround) : WSL2에서는 systemd가 기본적으로 비활성화되어 있어 Docker 데몬을 별도로 실행해줘야합니다.
+ - background 에서 데몬 실행 : sudo dockerd&
+ - Docker 권한 설정(선택)
+   -> 매번 sudo docker가 귀찮다면 : sudo usermod -aG docker $USER
+ - 설치 완료 후 테스트
