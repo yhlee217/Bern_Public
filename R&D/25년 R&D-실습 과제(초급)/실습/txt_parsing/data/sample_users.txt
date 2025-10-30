@@ -1,0 +1,6 @@
+name|age|address|phone|join_date
+Kim|30|Seoul|010-1234-5678|2023-01-15
+Lee|25|Busan|010-2345-6789|2023-03-20
+Park|28|Incheon|010-3456-7890|2023-05-10
+Choi|35|Daegu|010-4567-8901|2023-02-28
+Jung|32|Daejeon|010-5678-9012|2023-04-05

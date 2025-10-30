@@ -1,0 +1,50 @@
+[2025-10-19 10:30:45] [ERROR] Database connection failed - timeout after 30 seconds
+[2025-10-19 10:31:22] [INFO] User admin logged in successfully from 192.168.1.100
+[2025-10-19 10:32:10] [ERROR] Invalid credentials for user: guest
+[2025-10-19 10:33:05] [WARNING] High memory usage detected: 85% used
+[2025-10-19 10:34:18] [DEBUG] Request processing started for endpoint /api/users
+[2025-10-19 10:35:42] [INFO] New user registered: john.doe@example.com
+[2025-10-19 10:36:15] [ERROR] File not found: /var/log/app.log
+[2025-10-19 10:37:28] [WARNING] Slow query detected: SELECT took 5.2 seconds
+[2025-10-19 10:38:50] [INFO] Cache cleared successfully
+[2025-10-19 10:39:33] [DEBUG] Processing batch job: batch_001
+2025-10-19 10:40:12 ERROR Connection refused to server 10.0.0.50:8080
+2025-10-19 10:41:05 INFO Service started on port 3000
+2025-10-19 10:42:18 WARNING Disk space low: 10% remaining on /dev/sda1
+2025-10-19 10:43:22 DEBUG Loading configuration from config.json
+2025-10-19 10:44:45 ERROR Authentication failed for API key: abc123
+ERROR: 2025-10-19 10:45:10 - Invalid JSON format in request body
+INFO: 2025-10-19 10:46:33 - Background task completed successfully
+WARNING: 2025-10-19 10:47:15 - Rate limit exceeded for user: power_user
+DEBUG: 2025-10-19 10:48:20 - Database query executed in 0.05ms
+CRITICAL: 2025-10-19 10:49:55 - System shutdown initiated
+[2025-10-19 10:50:30] [INFO] Backup process started
+[2025-10-19 10:51:15] [WARNING] Network latency high: 250ms average
+[2025-10-19 10:52:40] [ERROR] Payment processing failed: insufficient funds
+[2025-10-19 10:53:22] [DEBUG] Session created for user ID: 12345
+[2025-10-19 10:54:10] [INFO] Email sent to customer@example.com
+2025-10-19 10:55:05 ERROR SSL certificate expired for domain: api.example.com
+2025-10-19 10:56:18 INFO Docker container started: web-app-01
+2025-10-19 10:57:30 WARNING CPU usage spike: 95% on core 2
+2025-10-19 10:58:45 DEBUG Garbage collection completed in 120ms
+2025-10-19 10:59:12 ERROR Database migration failed at step 5
+[2025-10-19 11:00:00] [CRITICAL] Service unavailable - emergency maintenance required
+[2025-10-19 11:01:25] [INFO] User session expired after 30 minutes of inactivity
+[2025-10-19 11:02:50] [WARNING] Deprecated API endpoint accessed: /v1/legacy
+[2025-10-19 11:03:33] [ERROR] Webhook delivery failed: connection timeout
+[2025-10-19 11:04:15] [DEBUG] Cache hit rate: 87.5% over last hour
+ERROR: 2025-10-19 11:05:40 - Deadlock detected in transaction processing
+INFO: 2025-10-19 11:06:22 - Scheduled task executed: daily_report_generation
+WARNING: 2025-10-19 11:07:10 - Unusual login pattern detected for user: admin
+DEBUG: 2025-10-19 11:08:55 - WebSocket connection established from 203.0.113.42
+FATAL: 2025-10-19 11:09:30 - Unrecoverable error in core module
+[2025-10-19 11:10:15] [INFO] Application started successfully - version 2.5.1
+[2025-10-19 11:11:40] [WARNING] Third-party API rate limit approaching: 90% used
+[2025-10-19 11:12:25] [ERROR] Invalid input data: expected integer, got string
+[2025-10-19 11:13:50] [DEBUG] Request headers: User-Agent=Mozilla/5.0
+[2025-10-19 11:14:33] [INFO] File uploaded successfully: document.pdf (2.3 MB)
+2025-10-19 11:15:18 ERROR Failed to connect to Redis: connection refused
+2025-10-19 11:16:05 INFO Scheduled backup completed: 1.5 GB transferred
+2025-10-19 11:17:42 WARNING Memory leak suspected in worker process #3
+2025-10-19 11:18:20 DEBUG Environment variable loaded: NODE_ENV=production
+2025-10-19 11:19:55 ERROR Queue processing stalled - manual intervention required

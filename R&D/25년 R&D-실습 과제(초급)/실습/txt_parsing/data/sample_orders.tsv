@@ -1,0 +1,6 @@
+order_id	customer	product	quantity	amount	order_date
+ORD-001	Kim	Laptop	1	1500000	2025-10-01 10:30:00
+ORD-002	Lee	Mouse	3	75000	2025-10-02 14:20:00
+ORD-003	Park	Webcam	2	150000	2025-10-03 09:15:00
+ORD-004	Choi	Monitor	1	350000	2025-10-04 16:45:00
+ORD-005	Jung	Headphones	1	200000	2025-10-05 11:00:00
